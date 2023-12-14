@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("images/green-nature-tgy6dtxhgtwubez9.jpg");
+}
+
+.wrapper{
+    width: 870px;
+    height:550px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: white;
+    border-radius:10px;
+    padding: 140px 160px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-40%);
+    font-size: 20px;
+}
+
+
+.password-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+
+.wrapper .sign-up-button{
+    width: 100%;
+    height: 45px;
+    background: seagreen;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.wrapper .sign-up-button:hover{
+    background-color: white;
+    color: seagreen;
+}
+
+
+.wrapper h1{
+    font-size: 50px;
+    margin-top: -50px;
+}
+
+.not-all{
+    font-size: 12px;
+    color: rgb(255, 86, 86);
+    display: none;
+}

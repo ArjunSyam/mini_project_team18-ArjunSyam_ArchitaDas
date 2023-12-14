@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <title> Book A Tour</title> 
+    <link rel="stylesheet" href="BookATour.css">
+</head>
+<html>
+    <body>
+        <section>
+            <div class = "container">
+            <header>BOOK A TOUR</header>
+    
+            <form action="home_page.html" onsubmit="return checkfield()">
+                <div class="details personal">
+                    <span class="title">Personal details</span>
+                    <div class = "fields">
+                        <div class="input-field">
+                            <label for="FirstName">FirstName<span style="color: red;">*</span></label>
+                            <input type="text" id="FirstName" name="FirstName">
+                        </div>
+    
+                        <div class="input-field">
+                            <label for="LastName">LastName<span style="color: red;">*</span></label>
+                            <input type="text" id="LastName" name="LastName">
+                        </div>
+    
+                        <div class="input-field">
+                            <label for="Datebirth">DOB<span style="color: red;">*</span></label>
+                            <input type="date" id="Datebirth" name="Datebirth">
+                        </div>
+        
+                </div>
+    
+                <div class = "fields-personal">
+                    <div class="input-field-email">
+                        <label for="email">Email ID<span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email">
+                    </div>
+    
+    
+                    <div class="input-field">
+                        <label for = "male">male</label>
+                        <input type="radio" name = "gender" id="male">
+                    </div>
+    
+                    <div class="input-field">
+                        <label for = "female">female</label>
+                        <input type="radio" name = "gender" id="female">
+                    </div>
+    
+                    <div class="input-field">
+                        <label for = "other">other</label>
+                        <input type="radio" name = "gender" id="other">
+                    </div>
+                </div>
+    
+                <div class = "details personal">
+                    <span class ="title">Book A Package</span>
+    
+                    <div class = "fields">
+                        <div class="input-field">
+                            <label for="Package">Package</label>
+                            <select id="Package" name = "Package">
+                                <option value="Package1" selected>Package 1</option>
+                                <option value="Package2" >Package 2</option>
+                                <option value="Package3">Package 3</option>
+                            </select>
+                        </div>
+    
+                        <div class="input-field">
+                            <label for="DateOfTravel-Arrival">Arrival Date<span style="color: red;">*</span></label>
+                            <input type="datetime-local" id="DateOfTravel-Arrival" name="DateOfTravel-Arrival">
+                        </div>
+    
+                        <div class="input-field">
+                            <label for="DateOfTravel-Departure">Departure Date<span style="color: red;">*</span></label>
+                            <input type="datetime-local" id="DateOfTravel-Departure" name="DateOfTravel-Departure">
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class = "fields-personal">
+                    <div class="input-field-members">
+                        <label for = "Members">Number of Members<span style="color: red;">*</span></label>
+                        <input type = "text" name="Members" id = "Members">
+                    </div>
+                    
+                </div>
+    
+                <div class = "details personal">
+                    <span class ="title">Travel Info</span>
+    
+                    <div class = "fields">
+                        <div class="input-field">
+                            <label for="illness">Medical Conditions(If Any)</label>
+                            <input type="text" id="illness" name="illness">
+                        </div>
+    
+                        <div class="input-field">
+                            <label for="child">Number Of Children(if any)</label>
+                            <input type="text" id="child" name="child">
+                        </div>
+    
+                        <div class="fields-personal input-field">
+                            <label for = "veg">Veg</label>
+                            <input type="radio" name = "food" id="veg">
+                        </div>
+        
+                        <div class="fields-personal input-field">
+                            <label for = "non-veg">Non-Veg</label>
+                            <input type="radio" name = "food" id="non-veg">
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="not-all" id="not-all">Please fill All Fields</div>
+    
+                <input type = "submit" name="SUBMIT" class="submiting">
+    
+    
+            </form>
+            </div>
+    </section>
+    <script src="BookATour.js"></script>
+    </body>
+</html>

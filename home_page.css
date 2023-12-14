@@ -1,0 +1,218 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,700&display=swap');
+
+
+/* Animations */
+
+@keyframes appear-text{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rev-block{
+    0%{
+        right: 0;
+        width: 100%;
+    }
+
+    
+    100%{
+        right: 0;
+        width: 0%;
+    }
+    
+}
+
+
+
+/*design*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.headbar h4, li, a, button{
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color:black;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color:rgb(8, 115, 77);
+}
+
+.headbar button{
+    padding: 9px 25px;
+    background-color: rgb(223, 227, 230,0%);
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+
+}
+
+.headbar button:hover{
+    color:rgb(8, 115, 77);
+
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(223, 227, 230,50%);
+}
+
+head{
+    margin: 0px;
+    overflow: hidden;
+}
+
+.heading{
+    margin-left: 25%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+
+h1{
+    color: black;
+    transform: translate(50%,50%);
+    animation-delay: 1.4s;
+    text-align: center;
+    position: relative;
+    margin-left: 5%;
+    top:-3px;
+    right: 610px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+
+.reveal-block{
+    position: absolute;
+}
+
+.reveal-block span{
+    opacity: 0;
+    animation: appear-text 0.1s linear forwards;
+    animation-delay: 1s;
+}
+
+.reveal-block:after {
+    content: '';
+    top:-3px;
+    right:610px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: white;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+    
+}
+
+
+.top--pic{
+    position: absolute;
+    top:-50px;
+    right:-50px;
+}
+
+.home--page--pic{
+    margin:0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+#head_pic{
+    position:relative;
+
+    width: 100%;
+    height: 70vh;
+    color: white;
+    font-family: Poppins;
+    background: url("images/green-nature-tgy6dtxhgtwubez9.jpg");
+    background-size: 160%;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+p1{
+    position:relative;
+    text-align: center;
+    top:130px;
+    right:-180px;
+    font-weight: 700;
+    font-size: 70px;
+    animation: appear-text 3s linear forwards;
+}
+
+p2{
+    position:relative;
+    text-align: center;
+    top:140px;
+    right:-470px;
+    font-weight: 300;
+    font-size: 20px;
+    animation: appear-text 3s linear forwards;
+
+}
+
+.img1{
+    float: right;
+    position: relative;
+    size:100px;
+    margin: 20px;
+    top: -60px;
+}
+.about{
+   h2{
+    position: relative;
+    max-width: 60%;
+   }
+    font-size:medium;
+    text-align: left;
+    text-justify: auto;
+    font-family:'Poppins';
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+
+.list{
+    position: relative;
+    left: 30px;
+}
+
+
+

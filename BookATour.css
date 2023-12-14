@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/green-nature-tgy6dtxhgtwubez9.jpg);
+}
+
+.container{
+    position: relative;
+    max-width: 900px;
+    width:100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight:600;
+    color:#333;
+
+}
+
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: green;
+
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container form .details{
+    margin-top: 10px;
+}
+
+.container form .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 12px 0;
+    padding-bottom: 6px;
+    color: green;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100%/3-15px);
+    flex-direction: column;
+}
+
+.fields .input-field input{
+    height: 30px;
+}
+
+.container form .fields-personal{
+    display: flex;
+    align-items: center;
+    
+}
+
+form .fields-personal .input-field{
+    display: flex;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+form .fields-personal .input-field-email{
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column;
+}
+
+form .fields-personal .input-field-email input{
+    display: flex;
+    height: 30px;
+    flex-direction: column;
+}
+
+.input-field label{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.input-field-email label{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.input-field select{
+    display: flex;
+    height: 30px;
+    flex-direction: column;
+}
+
+form .fields-personal .input-field-members{
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column;
+}
+
+.input-field-members label{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+form .fields-personal .input-field-members input{
+    display: flex;
+    height: 30px;
+    flex-direction: column;
+}
+
+.submiting{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    outline: none;
+    background-color: rgb(27, 176, 27);
+    color:white;
+}
+
+.submiting:hover{
+    background-color: rgb(14, 92, 14);
+    animation-timing-function: ease-in;
+}
+
+.not-all{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: red;
+    display: none;
+}
+
+
